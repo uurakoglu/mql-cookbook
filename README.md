@@ -16,16 +16,16 @@ MQL is the command language of ENOVIA, and public examples are hard to find. The
 
 | # | Recipe | Commands | What it covers |
 |---|--------|----------|----------------|
-| 1 | Reading objects | `print bus`, `list` | Look up objects and choose what to print |
-| 2 | Walking structures | `expand bus` | Go down and up a structure, with selectable output |
-| 3 | Reading relationships | `print connection`, `expand connection` | Inspect connections and their attributes |
-| 4 | Changing objects | `mod bus` | Change attributes and states on one object or many |
-| 5 | Changing relationships | `mod connection` | Change connection attributes in bulk |
-| 6 | Users and permissions | `mod person` | Update person records and assignments |
-| 7 | Commands and menus | `mod command` | Adjust command settings |
-| 8 | Output to a text file, then Excel | `output`, `set context` | Export results as .txt and open them in Excel for review |
-| 9 | Dry-run first | | See what a bulk change would do before it runs |
-| 10 | Transactions, logging and re-runs | `start transaction` | Make scripts safe to stop, resume and run twice |
+| 1 | [Reading objects](recipes/01-reading-objects.md) | `print bus`, `list` | Look up objects and choose what to print |
+| 2 | [Walking structures](recipes/02-walking-structures.md) | `expand bus` | See what an object is connected to, with selectable output |
+| 3 | [Output to a text file, then Excel](recipes/03-output-to-text-and-excel.md) | `output` | Send long results to a file and review them in Excel |
+| 4 | Reading relationships _(planned)_ | `print connection`, `expand connection` | Inspect connections and their attributes |
+| 5 | Changing objects _(planned)_ | `mod bus` | Change attributes and states on one object or many |
+| 6 | Changing relationships _(planned)_ | `mod connection` | Change connection attributes in bulk |
+| 7 | Users and permissions _(planned)_ | `mod person` | Update person records and assignments |
+| 8 | Commands and menus _(planned)_ | `mod command` | Adjust command settings |
+| 9 | Dry-run first _(planned)_ | | See what a bulk change would do before it runs |
+| 10 | Transactions, logging and re-runs _(planned)_ | `start transaction` | Make scripts safe to stop, resume and run twice |
 
 ## Recipe format
 
