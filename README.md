@@ -2,7 +2,7 @@
 
 Small, generic MQL patterns for administering a 3DEXPERIENCE / ENOVIA platform.
 
-MQL is the command language of ENOVIA, and public examples are hard to find. These notes are the patterns I use most, written up so that someone new to the platform can adapt them. Each recipe is short and explains when to use it and what to watch out for.
+MQL is the command language of ENOVIA, and there are few public examples. These are the commands I use most, written up short so that someone new to the platform can adapt them.
 
 ## Ground rules
 
@@ -29,13 +29,7 @@ MQL is the command language of ENOVIA, and public examples are hard to find. The
 
 ## Recipe format
 
-Each file in `recipes/` follows the same layout:
-
-1. **Problem**: what you are trying to do, in one or two sentences.
-2. **Pattern**: the commands, with comments.
-3. **Why it works**: the idea behind it.
-4. **Watch out for**: mistakes that cost time or data.
-5. **Variations**: when to change it.
+Each file in `recipes/` states the problem, shows the commands with a short explanation and ends with notes on what can go wrong.
 
 ## Contributing
 

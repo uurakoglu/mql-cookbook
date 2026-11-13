@@ -1,37 +1,29 @@
 # Reading objects: `print bus` and `list`
 
-## Problem
-You need to look at an object or a set of objects without opening a client. Sometimes you want everything about one object, sometimes only two or three fields.
-
-## Pattern
-Print everything about one object (type, name, revision):
+Looking at an object without opening a client. Sometimes you want everything about one object, sometimes only two or three fields.
 
 ```mql
 print bus Drawing DRW-0000001 A.1;
 ```
 
-Print only the fields you need:
+Prints everything for the object with that type, name and revision. This is the one to use when you do not yet know which fields you need.
 
 ```mql
 print bus Drawing DRW-0000001 A.1 select owner created;
 ```
 
-List records of a type and choose the columns:
+Prints only the owner and the creation date and time. It is a quick way to see who made an object and when.
 
 ```mql
 list person select name username email;
 ```
 
-## Why it works
-`print bus` identifies one object by type, name and revision. Without `select` it prints every field it has, which is useful when you do not yet know what you are looking for. Adding `select` and a list of field names narrows the output to exactly those fields, so the answer is short and easy to read. `list` works the same way for a whole type: it returns one entry per record, and `select` decides which fields appear.
+Returns one line per person of that type, with just those three fields.
 
-## Watch out for
-- Start with the full `print bus` when exploring, then switch to `select` once you know the field names you need.
-- Finish each command with a semicolon.
-- `created` returns the date and time, so it is a quick way to answer "who made this and when".
-- `print` and `list` only read data. They do not change anything.
-- A `list` over a large type can return thousands of lines. See [recipe 3](03-output-to-text-and-excel.md) for sending long results to a file.
+## Notes
 
-## Variations
-- Add more fields to `select` as questions come up, for example `owner created modified`.
-- Use the same `select` idea with `expand bus` ([recipe 2](02-walking-structures.md)).
+- Every command ends with a semicolon.
+- `print` and `list` only read data. They change nothing.
+- Start with the full `print bus` while exploring, then switch to `select` once you know the field names.
+- Add fields to `select` as new questions come up, for example `owner created modified`. The same idea works with `expand bus` ([recipe 2](02-walking-structures.md)).
+- A `list` over a large type can return thousands of lines. [Recipe 3](03-output-to-text-and-excel.md) shows how to send them to a file.
