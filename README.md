@@ -19,7 +19,7 @@ MQL is the command language of ENOVIA, and there are few public examples. These 
 | 1 | [Reading objects](recipes/01-reading-objects.md) | `print bus`, `list` | Look up objects and choose what to print |
 | 2 | [Walking structures](recipes/02-walking-structures.md) | `expand bus` | See what an object is connected to, with selectable output |
 | 3 | [Output to a text file, then Excel](recipes/03-output-to-text-and-excel.md) | `output` | Send long results to a file and review them in Excel |
-| 4 | Reading relationships _(planned)_ | `print connection`, `expand connection` | Inspect connections and their attributes |
+| 4 | [Reading relationships](recipes/04-reading-relationships.md) | `print connection`, `expand bus` | Inspect connections and their attributes |
 | 5 | Changing objects _(planned)_ | `mod bus` | Change attributes and states on one object or many |
 | 6 | Changing relationships _(planned)_ | `mod connection` | Change connection attributes in bulk |
 | 7 | Users and permissions _(planned)_ | `mod person` | Update person records and assignments |
