@@ -20,7 +20,7 @@ from VPMReference PRD-000001 A.1
     history
 ```
 
-The first line is the connection type, followed by the two objects it links, the creation and modification times, and the owner.
+The first line is the connection type, followed by the two objects it links, the creation and modification times, and the owner. Under `history` the platform lists what happened to the connection, such as when it was created, what it was connected to and when it was modified.
 
 ```mql
 expand bus VPMReference prd-xxx A.1 select bus type name revision select rel id type;
