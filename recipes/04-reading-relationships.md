@@ -17,7 +17,6 @@ Expands the object and lists the objects connected to it. For each one you get i
 ## Notes
 
 - `expand bus` is the way to get at the connections of an object. The word `bus` has to be there, or the command returns an error.
-- There is no `expand connection` command. To see what a connection links, start from one of the objects with `expand bus`, or run `print connection` on its id.
 - A connection links two objects, so it is easier to start from the object and expand than to look for the connection directly.
 - `print connection` and `expand bus` only read data.
 - The `select` part of the syntax can differ between releases, so try it on yours before reusing it.
