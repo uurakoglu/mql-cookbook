@@ -13,7 +13,7 @@ An example of the start of the output:
 ```
 relationship VPMInstance
 from VPMReference PRD-000001 A.1
-    to VPMReference PRD-000001 B.1
+    to VPMReference PRD-000002 B.1
     created 11/19/2024 7:36:29 PM
     modified 6/11/2025 1:46:34 PM
     owner user01
