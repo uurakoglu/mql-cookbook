@@ -8,6 +8,20 @@ print connection <connection_id>;
 
 Prints everything the platform stores about that one connection to the MQL console. The most useful part is the connection type: the connection between a 3D Data object and a Drawing is one type, and the connection between a 3D Data object and another 3D Data object is a different one. The output also shows when the connection was created and by whom, when it was last modified, its history, any other attributes defined on it, and the project and organization it belongs to.
 
+An example of the start of the output:
+
+```
+relationship VPMInstance
+from VPMReference PRD-000001 A.1
+    to VPMReference PRD-000001 B.1
+    created 11/19/2024 7:36:29 PM
+    modified 6/11/2025 1:46:34 PM
+    owner user01
+    history
+```
+
+The first line is the connection type, followed by the two objects it links, the creation and modification times, and the owner.
+
 ```mql
 expand bus VPMReference prd-xxx A.1 select bus type name revision select rel id type;
 ```
